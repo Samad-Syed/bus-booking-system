@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset= "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Bus Search</title>
+            <link rel="stylesheet" href="style.css">
+        </meta>
+    </meta>
+</head>
+<body>
+    <main class="container">
+        <h1>Bus Booking</h1>
+        <p>Find your next bus journey</p>
+
+        <form action="" id="searchForm">
+            <label for="source">From</label>
+            <input type="text" id="source" placeholder="e.g. Hyderabad"
+            required>
+            <label for="destination">To</label>
+            <input type="text" id="destination" placeholder="e.g. Bangalore" required >
+
+            <label for="travelDate">Travel Date</label>
+            <input type="date"  id="travelDate" min="2026-10-09" value="2026-10-15" required >
+
+            <button type="submit">Search Buses</button>
+
+        </form>
+        <!-- <p id="result"></p> -->
+        <section id="busResults" aria-live="polite">
+            <h2>Available Buses</h2>
+            <p>Enter your route and click Search Buses.</p>
+            
+        </section>
+
+
+        
+    </main>
+
+    <script src="script.js">    </script>
+    
+</body>
+</html>

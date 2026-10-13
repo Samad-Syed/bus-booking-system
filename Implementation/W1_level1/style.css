@@ -1,0 +1,150 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 28px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#busResults {
+    margin-top: 30px;
+}
+
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 18px;
+    }
+}
+
+
+.bus-card {
+    margin-top: 16px;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.bus-card h3 {
+    margin: 0 0 10px;
+    color: #ea580c;
+}
+
+.bus-route {
+    margin: 8px 0 18px;
+    color: #475569;
+}
+
+.bus-timings {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 16px 0;
+    font-weight: bold;
+}
+
+.bus-fare {
+    margin: 16px 0;
+    color: #15803d;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bus-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.view-seats {
+    width: auto;
+    margin-top: 0;
+    padding: 10px 18px;
+    background: #ea580c;
+}
+
+.view-seats:hover {
+    background: #c2410c;
+}
+
+/* Container for available seats */
+.seats-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+    padding: 12px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+/* Individual seat */
+.seat {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #2563eb;
+    border-radius: 6px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* No seats available message */
+.no-seats {
+    margin-top: 16px;
+    color: #dc2626;
+    font-weight: bold;
+}
